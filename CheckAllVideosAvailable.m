@@ -32,7 +32,7 @@ for i=1:length(vList)
     end
 end
 if length(isFine)<length(wavList)
-    warning('Removing missing videos from file list')
+    warning('Removing missing videos from file list. You should expect about 25 missing videos for the interupted condition, and 4 for the others. More than this should worry you!')
 else
     disp('All videos located')
 end
