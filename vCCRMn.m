@@ -713,6 +713,7 @@ while track1done == 0 | track2done == 0
             %                 app = responsePadTab;
             Nresp = 'nan';
             Cresp = 'nan';
+            TimeOfResponse = clock;
             else
             Nresp = app.ResponseNoun.Value;
             Cresp = app.ResponseColour.Value;
