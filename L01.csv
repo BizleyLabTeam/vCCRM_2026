@@ -1,0 +1,5 @@
+nBlocks,nPracticeTrials,TargetsFile,MaskerFile,MAX_TRIALS,CondCode,StartMessage,
+1,6,3MTargets.txt,6MFmaskers.txt,25,M-MF,Listen to the man who says ''Show the dog ...''.  Ignore everyone else.,
+1,6,3MTargets.txt,SpchNz.wav,25,M-Nz,Listen to the man who says  ''Show the dog ...''.  Ignore the noise.,
+1,6,3FTargets.txt,6MFmaskers.txt,25,F-MF,Listen to the woman who says ''Show the dog ...''.  Ignore everyone else.,
+1,6,3FTargets.txt,SpchNz.wav,25,F-Nz,Listen to the woman who says ''Show the dog ...''.  Ignore the noise.,

@@ -1,0 +1,9 @@
+function CheckAllWavsAvailable(wavList, wavType)
+
+wasError = [];
+for i=1:length(wavList)
+    if ~exist(char(wavList(i)), 'file')
+        wasError = [wasError,i];
+disp(['File does not exist: ' char(wavList(i))]);
+    end
+end

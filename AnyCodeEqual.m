@@ -1,0 +1,26 @@
+function x = AnyCodeEqual(Code1, Code2,differentGender)
+% return 1 if any field is the same in the two sets of codes, if
+% differentGender == 1 this forces opposite gender, if differentGender ==0
+% this forces same gender
+if differentGender == 1 ;
+    % ensure opposite gender
+    if (strcmp(Code1.animal,Code2.animal) ...
+        || strcmp(Code1.colour,Code2.colour) ...
+        || strcmp(Code1.talker,Code2.talker) ...
+        || strcmp(Code1.noun,Code2.noun) ...
+        || Code1.gender == Code2.gender)  ;
+    x=1;
+    else
+        x=0;
+    end
+elseif differentGender == 0  ;% force same gender
+    if (strcmp(Code1.animal,Code2.animal) ...
+            || strcmp(Code1.colour,Code2.colour) ...
+            || strcmp(Code1.talker,Code2.talker) ...
+            || strcmp(Code1.noun,Code2.noun) ...
+            || Code1.gender ~= Code2.gender)   ;
+        x=1;
+    else
+        x=0;
+    end
+end
