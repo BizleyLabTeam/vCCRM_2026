@@ -396,11 +396,11 @@ else
 end
 %try
 pretestTracks = [1 1 2 1 2 1 2 1 2];
-demoTracks = [1 2 1 2 1 2 1 2];
-demoSNR = [20 20 20 20 10 10, 10, 10];
+demoTracks = [1 2 1 2 1 2];
+demoSNR = [20 20 20 20 10 10];
 sumCorrect = 0;
 pretestVideo = [zeros(1,6) 2 2];
-demoVideo = [0, 0, 1, 1, 2, 2, 3, 3];
+demoVideo = [0, 0, 1, 1, 2, 2];
 nInaRow(1:2) = 0;
 while track1done == 0 | track2done == 0
     if strcmpi(type,'pretest')
@@ -607,11 +607,11 @@ while track1done == 0 | track2done == 0
             end
         end
         if Video <= 1
-            vidFolder = 'video\Full'; %TEMP
+            vidFolder = fullfile('video','Full'); %TEMP
         elseif Video == 2
-            vidFolder = 'video\Freeze';
+            vidFolder = fullfile('video','Freeze');
         elseif Video == 3
-            vidFolder = 'video\Disk';
+            vidFolder = fullfile('video','video');
         end
         audio=y;
         %% get video and set up videoPlayer

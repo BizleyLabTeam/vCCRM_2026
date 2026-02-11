@@ -17,7 +17,7 @@ p.addParamValue('START_change_dB', 0, @isnumeric);
 p.addParamValue('MIN_change_dB', 0, @isnumeric);
 % p.addParamValue('MIN_change_dB', 3);
 % p.addParamValue('MAX_TRIALS', 30, @isnumeric);
-p.addParamValue('MAX_TRIALS', 8);% note code implements this + 1 trial 
+p.addParamValue('MAX_TRIALS', 6);% note code implements this + 1 trial 
 p.addParamValue('LevittsK', 10, @isnumeric);
 % p.addParamValue('CatchTrials', 0, @isnumeric);
 p.addParamValue('CatchTrials', 0);
